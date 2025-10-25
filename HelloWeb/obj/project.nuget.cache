@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IHhoP1ZD+GQ=",
+  "dgSpecHash": "RLOtFw9SZjs=",
   "success": true,
   "projectFilePath": "/Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/HelloWeb.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.10/microsoft.netcore.app.host.linux-x64.9.0.10.nupkg.sha512"
+  ],
   "logs": []
 }

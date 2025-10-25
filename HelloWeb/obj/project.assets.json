@@ -1,7 +1,8 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {},
+    "net9.0/linux-x64": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
@@ -60,6 +61,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[9.0.10, 9.0.10]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -69,6 +76,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "linux-x64": {
+        "#import": []
       }
     }
   }
