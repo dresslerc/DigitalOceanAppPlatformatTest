@@ -25,3 +25,4 @@
 /Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/obj/Debug/net9.0/HelloWeb.pdb
 /Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/obj/Debug/net9.0/HelloWeb.genruntimeconfig.cache
 /Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/obj/Debug/net9.0/ref/HelloWeb.dll
+/Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/obj/Debug/net9.0/HelloWeb.sourcelink.json
