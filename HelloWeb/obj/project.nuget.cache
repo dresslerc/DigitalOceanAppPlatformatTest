@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RLOtFw9SZjs=",
+  "dgSpecHash": "Xg7CZD7WmIs=",
   "success": true,
   "projectFilePath": "/Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/HelloWeb.csproj",
   "expectedPackageFiles": [
-    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.10/microsoft.netcore.app.host.linux-x64.9.0.10.nupkg.sha512"
+    "/Users/dresslerc/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/dresslerc/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/dresslerc/.nuget/packages/npgsql/9.0.4/npgsql.9.0.4.nupkg.sha512"
   ],
   "logs": []
 }

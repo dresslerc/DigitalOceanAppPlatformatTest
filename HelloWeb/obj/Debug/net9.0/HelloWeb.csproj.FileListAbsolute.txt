@@ -26,3 +26,6 @@
 /Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/obj/Debug/net9.0/HelloWeb.genruntimeconfig.cache
 /Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/obj/Debug/net9.0/ref/HelloWeb.dll
 /Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/obj/Debug/net9.0/HelloWeb.sourcelink.json
+/Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/bin/Debug/net9.0/Npgsql.dll
+/Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/obj/Debug/net9.0/HelloWeb.csproj.AssemblyReference.cache
+/Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/obj/Debug/net9.0/HelloWeb.csproj.Up2Date
