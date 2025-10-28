@@ -1,26 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ywmvSd61SFE=",
+  "dgSpecHash": "yrN1ulP+W1Y=",
   "success": true,
   "projectFilePath": "/Users/dresslerc/Documents/GitHub/DigitalOceanAppPlatformatTest/HelloWeb/HelloWeb.csproj",
   "expectedPackageFiles": [
     "/Users/dresslerc/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "/Users/dresslerc/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "/Users/dresslerc/.nuget/packages/npgsql/9.0.4/npgsql.9.0.4.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.runtime.win-x64/9.0.10/microsoft.netcore.app.runtime.win-x64.9.0.10.nupkg.sha512",
     "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/9.0.10/microsoft.netcore.app.runtime.linux-x64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.runtime.osx-x64/9.0.10/microsoft.netcore.app.runtime.osx-x64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.runtime.linux-arm64/9.0.10/microsoft.netcore.app.runtime.linux-arm64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.runtime.osx-arm64/9.0.10/microsoft.netcore.app.runtime.osx-arm64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/9.0.10/microsoft.aspnetcore.app.runtime.win-x64.9.0.10.nupkg.sha512",
     "/Users/dresslerc/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/9.0.10/microsoft.aspnetcore.app.runtime.linux-x64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-x64/9.0.10/microsoft.aspnetcore.app.runtime.osx-x64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-arm64/9.0.10/microsoft.aspnetcore.app.runtime.linux-arm64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-arm64/9.0.10/microsoft.aspnetcore.app.runtime.osx-arm64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.host.win-x64/9.0.10/microsoft.netcore.app.host.win-x64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.10/microsoft.netcore.app.host.linux-x64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.host.osx-x64/9.0.10/microsoft.netcore.app.host.osx-x64.9.0.10.nupkg.sha512",
-    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.host.linux-arm64/9.0.10/microsoft.netcore.app.host.linux-arm64.9.0.10.nupkg.sha512"
+    "/Users/dresslerc/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.10/microsoft.netcore.app.host.linux-x64.9.0.10.nupkg.sha512"
   ],
   "logs": []
 }
