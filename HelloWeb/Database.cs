@@ -1,8 +1,9 @@
 using Npgsql;
+using System.Collections.Generic;
 
 public class Database
 { 
-    public static async Task<string> GetData() {
+    public static async Task<string[]> GetData() {
 
         // connection string — adjust for your environment
         var connString = Environment.GetEnvironmentVariable("SQLCS");
@@ -15,14 +16,14 @@ public class Database
         await using var cmd = new NpgsqlCommand(sql, conn);
         await using var reader = await cmd.ExecuteReaderAsync();
 
-        string output = "";
+        var output = new List<string>();
         while (await reader.ReadAsync())
         {
-            output += reader.GetString(0) + "\n";
+            output.Add(reader.GetString(0));
  
         }
 
-        return output;
+        return output.ToArray();
     }   
 
 }
