@@ -50,7 +50,7 @@ app.MapWhen(ctx => !ctx.Request.Path.StartsWithSegments("/api"), spaApp =>
 {
     spaApp.UseSpa(spa =>
     {
-        spa.Options.SourcePath = "ClientApp";
+        spa.Options.SourcePath = "clientapp";
 
         if (app.Environment.IsDevelopment())
         {
@@ -59,5 +59,6 @@ app.MapWhen(ctx => !ctx.Request.Path.StartsWithSegments("/api"), spaApp =>
     });
 });
 
+app.MapFallbackToFile("index.html");
 
 app.Run();
