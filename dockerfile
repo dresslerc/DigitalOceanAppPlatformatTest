@@ -5,6 +5,11 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /source
 
+# Install Node.js tooling for SPA build steps
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends nodejs npm \
+    && rm -rf /var/lib/apt/lists/*
+
 # Copy only project file(s) and restore dependencies first
 COPY HelloWeb/*.csproj ./HelloWeb/
 WORKDIR /source/HelloWeb
