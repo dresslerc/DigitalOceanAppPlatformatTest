@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.IO;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -45,20 +46,30 @@ app.MapGet("/api/db", async () =>
     return Results.Content(json, "application/json"); // or "text/html", "text/plain", etc.
 });
 
-// SPA integration
-app.MapWhen(ctx => !ctx.Request.Path.StartsWithSegments("/api"), spaApp =>
+// Serve SPA assets: dev server locally, static build in production
+if (app.Environment.IsDevelopment())
 {
-    spaApp.UseSpa(spa =>
+    app.MapWhen(ctx => !ctx.Request.Path.StartsWithSegments("/api"), spaApp =>
     {
-        spa.Options.SourcePath = "clientapp";
-
-        if (app.Environment.IsDevelopment())
+        spaApp.UseSpa(spa =>
         {
+            spa.Options.SourcePath = "clientapp";
             spa.UseReactDevelopmentServer(npmScript: "start");
-        }
+        });
     });
-});
+}
+else
+{
+    app.MapFallback(() =>
+    {
+        var indexPath = Path.Combine(app.Environment.ContentRootPath, "clientapp", "build", "index.html");
+        if (File.Exists(indexPath))
+        {
+            return Results.File(indexPath, "text/html");
+        }
 
-app.MapFallbackToFile("index.html");
+        return Results.NotFound();
+    });
+}
 
 app.Run();
