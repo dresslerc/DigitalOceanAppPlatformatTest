@@ -1,0 +1,22 @@
+# === Build Stage: React ===
+FROM node:20-alpine AS build
+WORKDIR /app/clientapp
+
+# Install dependencies first for better layer caching
+COPY HelloWeb/clientapp/package*.json ./
+RUN npm install
+
+# Copy the rest of the React app and build it
+COPY HelloWeb/clientapp ./
+RUN npm run build
+
+
+# === Runtime Stage: serve CLI ===
+FROM node:20-alpine
+WORKDIR /app/clientapp
+
+RUN npm install -g serve
+COPY --from=build /app/clientapp/build ./build
+
+EXPOSE 8080
+CMD ["serve", "-s", "build", "-l", "8080"]

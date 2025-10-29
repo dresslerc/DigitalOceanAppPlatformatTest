@@ -26,7 +26,7 @@ else
     app.UseHsts();
 }
 
-// app.MapGet("/", () => "Hello World!");
+app.MapGet("/api/test", () => "Hello World!");
 app.MapGet("/api/envar", () => Environment.GetEnvironmentVariable("SQLCS"));
 //app.MapGet("/db", async () => await Database.GetData());
 

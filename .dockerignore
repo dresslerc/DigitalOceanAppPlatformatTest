@@ -1,6 +1,8 @@
+**/node_modules
 **/bin
 **/obj
 **/out
 **/.vs
+**/build
 .dotnet
 .Microsoft.DotNet.ImageBuilder
