@@ -26,10 +26,10 @@ else
 }
 
 // app.MapGet("/", () => "Hello World!");
-app.MapGet("/envar", () => Environment.GetEnvironmentVariable("SQLCS"));
+app.MapGet("/api/envar", () => Environment.GetEnvironmentVariable("SQLCS"));
 //app.MapGet("/db", async () => await Database.GetData());
 
-app.MapGet("/db", async () =>
+app.MapGet("/api/db", async () =>
 {
     var data = await Database.GetData(); // returns string[]
 
